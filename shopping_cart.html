@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width-, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products -Shopy Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/shopyhub-6.jpg" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+    
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="mean-icon" 
+            onclick="menutoggle()">
+        </div>
+    </div>
+<!--------cart item detail-------->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/buy-1.jpg">
+                    <div>
+                        <p>Red Printed Tshirt</p>
+                        <small>Price: 500rs</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>500rs</td>
+        </tr>
+        <!--------copy paste above-------->
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/buy-2.jpg">
+                    <div>
+                        <p>Red Printed Tshirt</p>
+                        <small>Price: 600rs</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>600rs</td>
+        </tr>
+        <!--------copy paste above-------->
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/buy-3.jpg">
+                    <div>
+                        <p>Red Printed Tshirt</p>
+                        <small>Price: 700rs</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>700rs</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>1800rs</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>12rs</td>
+            </tr>
+            <tr>
+                <td>Totak</td>
+                <td>1812rs</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--------footer-------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download our app for Android and ios mobile phone. </p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                 <!--------img come here-------->
+                 <img src="images/shopyhub-6.jpg" alt="">
+                <p>Our purpose is To Sustainable Make the Pleasure and benefits 
+                    of Sports Accessible to the Many </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupouns</li>
+                    <li>Blog post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>FACEBOOK</li>
+                    <li>TWITTER</li>
+                    <li>INSTAGRAM</li>
+                    <li>YOUTUBE</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------js for toggle menu-------->
+<script>
+    var menuitems =document.getElementById("menuitems");
+    menuitems.style.maxheight ="0px";
+
+    function menutoggle(){
+        if(menuitems.style.maxheight ="0px")
+        {
+            menuitems.style.maxheight ="200px"
+        }
+        else
+        {
+            menuitems.style.maxheight ="0px"
+        }
+    }
+</script>
+
+</body>
+</html>
